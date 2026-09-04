@@ -1,6 +1,6 @@
 # RaceDay – Part 1: System Planning and Database
 
-RaceDay is a web-based event management platform for the South African road running, walking, and cycling community. This repository contains **Part 1** planning deliverables only (no API code yet).
+RaceDay is a web-based event management platform for the South African road running, walking, and cycling community. This repository contains  planning deliverables only 
 
 ## User Roles
 
@@ -23,16 +23,6 @@ RaceDay/
 └── README.md
 ```
 
-## Setup Instructions (Cloudlabs VM)
-
-### 1. Clone the repository
-
-```powershell
-cd C:\Users\<YourUsername>\source\repos
-git clone https://github.com/<your-username>/RaceDay.git
-cd RaceDay
-```
-
 ### 2. Run the SQL script in SSMS
 
 1. Open **SQL Server Management Studio (SSMS)** on your Cloudlabs VM.
@@ -43,21 +33,11 @@ cd RaceDay
 
 ### 3. Export the ERD as PNG
 
-Option A – **Mermaid Live Editor** (recommended):
-
-1. Open [https://mermaid.live](https://mermaid.live) in the VM browser.
-2. Paste the contents of `docs/erd.mmd`.
-3. Click **Actions → PNG** and save as `docs/erd.png`.
-
-Option B – **draw.io / diagrams.net**:
+ **draw.io / diagrams.net**:
 
 1. Open [https://app.diagrams.net](https://app.diagrams.net).
 2. Recreate the diagram using the entity list in `docs/erd.mmd`.
 3. Export as PNG to `docs/erd.png`.
-
-### 4. GitHub Actions CI/CD
-
-The workflow in `.github/workflows/part1-validation.yml` validates that all required Part 1 files exist in `/docs`. After pushing to GitHub, check the **Actions** tab for a green checkmark.
 
 ## CI/CD Build Status
 
@@ -74,7 +54,7 @@ Your video should cover:
 - ERD design decisions (entities, PKs, FKs, cardinality)
 - API endpoint plan walkthrough
 - Live SSMS execution of `raceday-schema.sql`
-- Clear voiceover (no AI-generated voice)
+- Clear voiceover
 
 ## Database Design Summary
 
